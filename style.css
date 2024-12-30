@@ -21,6 +21,7 @@ body{
     background-size : contain;
     background-position :right -100px;
     background-repeat: no-repeat;
+
 }
 .container{
     padding : 10px 10%;
@@ -230,6 +231,8 @@ nav ul li a:hover:after{
 
 
 /*---------------------------contact----------------------------------------------------*/
+
+
  .contact-left{
     flex-basis:35%;
 }
@@ -302,21 +305,29 @@ nav .fas{
     display:none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     .header-text {
         margin-top: 60%; /* Move the text further down */
         margin-bottom: 10%; /* Optional bottom margin */
         font-size: 10px; /* Adjust font size for smaller screens */
         text-align: center; /* Center align text for better layout */
     }
+    #header{
+        background-image :url(naveen_profile_mob.png);
+        max-background-size: 55vh 80vh  ; /* Stretch to fit width and height */
+        background-position: center right; /* Center the image both horizontally and vertically */
 
+
+    }
     .header-text h1 {
-        font-size: 24px; /* Reduce h1 font size */
+        font-size: 30px; /* Reduce h1 font size */
         margin-bottom: 10px; /* Add space below the heading */
+        text-align : left;
     }
 
     .header-text p {
-        font-size: 16px; /* Adjust font size for paragraph */
+        text-align : left;
+        font-size: 25px; /* Adjust font size for paragraph */
     }
 
     nav .fas{
@@ -365,6 +376,15 @@ nav .fas{
 
     .contact-left, .contact-right{
      flex-basis: 100%;
+    }
+
+    .about-col-1 img{
+        display : none;
+    }
+
+    #about{
+        margin : 0;
+        padding : 0;
     }
 
 }
